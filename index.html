@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon/favicon-32x32.png"
+    />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <!-- <h1>Let's Start JavaScript</h1>
+    <p>This is beginning of JavaScript Programming</p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML = 10 + 5;
+    </script> -->
+    <!-- <h1>Let's Start JavaScript</h1>
+    <p>This is beginning of JavaScript Programming</p>
+    <script>
+      document.write(5+8);
+    </script> -->
+    <!-- <script>
+      window.alert(60+9);
+    </script> -->
+    <!-- <script>
+      console.log(5 + 6);
+    </script> -->
+    <!-- <button onclick="window.print()">Print this page</button> -->
+    <!-- <script>
+      document.getElementById("demo").innerHTML = "Hello Zoha.";
+    </script> -->
+    <!-- a = 5; b = 6; c = a + b;
+    function myFunction() {
+      document.getElementById("demo1").innerHTML = "Hello Zoha!";
+      document.getElementById("demo2").innerHTML = "How are you?";
+    } -->
+
+    <!-- <script>
+      // Single-line comment
+      /*
+   Multi-line comment
+*/
+      // Variable declaration and assignment
+      var x = 5; // using var keyword
+      let y = 10; // using let keyword
+      const PI = 3.14; // using const keyword (constants)
+
+      // Variables can hold different data types
+      var name = "John"; // string
+      var age = 30; // number
+      var isStudent = true; // boolean
+
+      // Variables can be reassigned with new values
+      name = "Jane";
+      age = 25;
+      isStudent = false;
+    </script> -->
+    <!-- <script>
+      // Arithmetic operators
+      let x = 5 + 3; // Addition
+      let y = 10 - 4; // Subtraction
+      let z = 6 * 2; // Multiplication
+      let w = 8 / 4; // Division
+      let remainder = 10 % 3; // Modulus
+
+      // Assignment operators
+      let a = 10;
+      a += 5; // Equivalent to a = a + 5
+      let b = 20;
+      b -= 3; // Equivalent to b = b - 3
+      let c = 6;
+      c *= 4; // Equivalent to c = c * 4
+      let d = 24;
+      d /= 6; // Equivalent to d = d / 6
+
+      // Comparison operators
+      let isEqual = x === y; // Strict equality
+      let isNotEqual = x !== y; // Strict inequality
+      let isGreater = x > y; // Greater than
+      let isLess = x < y; // Less than
+      let isGreaterOrEqual = x >= y; // Greater than or equal to
+      let isLessOrEqual = x <= y; // Less than or equal to
+
+      // Logical operators
+      let p = true;
+      let q = false;
+      let andResult = p && q; // Logical AND
+      let orResult = p || q; // Logical OR
+      let notResult = !p; // Logical NOT
+
+      // String operators
+      let firstName = "John";
+      let lastName = "Doe";
+      let fullName = firstName + " " + lastName; // Concatenation
+      let message = "Hello, " + firstName + "!"; // Concatenation with string
+
+      // Conditional (ternary) operator
+      let age = 18;
+      let canVote = age >= 18 ? "Yes" : "No"; // Check voting eligibility
+
+      // Unary operators
+      let num = 5;
+      num++; // Increment by 1
+      let isNegative = -num; // Unary negation
+
+      // Bitwise operators
+      let binary1 = 10; // Binary representation: 1010
+      let binary2 = 6; // Binary representation: 0110
+      let bitwiseAnd = binary1 & binary2; // Bitwise AND: 0010 (2 in decimal)
+      let bitwiseOr = binary1 | binary2; // Bitwise OR: 1110 (14 in decimal)
+      let bitwiseXor = binary1 ^ binary2; // Bitwise XOR: 1100 (12 in decimal)
+    </script> -->
+    <!-- <script>
+      // Primitive data types
+      let stringVar = "Hello"; // String
+      let numberVar = 123; // Number
+      let booleanVar = true; // Boolean
+      let undefinedVar = undefined; // Undefined
+      let nullVar = null; // Null
+
+      // Special JavaScript data types
+      let symbolVar = Symbol("unique"); // Symbol
+
+      // Complex data types
+      let arrayVar = [1, 2, 3]; // Array
+      let objectVar = { name: "John", age: 30 }; // Object
+      let functionVar = function () {
+        return "Hello, world!";
+      }; // Function
+    </script> -->
+    <!-- <script>
+      // Function Declaration
+      function greet(name) {
+        return "Hello, " + name + "!";
+      }
+
+      // Function Expression (Anonymous Function)
+      let calculateArea = function (radius) {
+        return Math.PI * radius * radius;
+      };
+
+      // Arrow Function (ES6)
+      let double = (number) => {
+        return number * 2;
+      };
+
+      // Calling Functions
+      let greeting = greet("John");
+      let circleArea = calculateArea(5);
+      let result = double(10);
+
+      // Output
+      console.log(greeting); // Output: "Hello, John!"
+      console.log(circleArea); // Output: 78.53981633974483
+      console.log(result); // Output: 20
+    </script>
+    <script>
+      // Creating an empty object
+let person = {};
+
+// Adding properties to the object
+person.name = "John";
+person.age = 30;
+person.gender = "male";
+
+// Accessing properties of the object
+console.log(person.name); // Output: John
+console.log(person.age); // Output: 30
+console.log(person.gender); // Output: male
+
+let person = {
+    name: "John",
+    age: 30,
+    greet: function() {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+
+person.greet(); // Output: Hello, my name is John
+
+    </script> -->
+
+    <!-- <script>
+      //using quotes
+      let carName1 = "Volvo XC60"; // Double quotes
+      let carName2 = "Volvo XC60"; // Single quotes
+
+      //quotes inside quotes
+      let answer1 = "It's alright";
+      let answer2 = "He is called 'Johnny'";
+      let answer3 = 'He is called "Johnny"';
+
+      //template strings
+      let text = `He's often called "Johnny"`;
+
+      //string length
+      let text0 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let length = text0.length;
+
+      //escape character
+      let text1 = 'We are the so-called "Vikings" from the north.';
+      let text2 = "It's alright.";
+      let text3 = "The character \\ is called backslash.";
+
+      //breaking long lines
+      document.getElementById("demo").innerHTML = "Hello Dolly!";
+
+      //template string (multi-lines)
+      let text5 = `The quick
+                  brown fox
+                  jumps over
+                  the lazy dog`;
+
+      //javascript strings as object
+      let x = "John"; // Primitive string
+      let y = new String("John"); // String object (not recommended)
+    </script> -->
+
+    <!-- <script>
+      // Define a sample string
+      let text = "   JavaScript String Methods   ";
+
+      // String Length
+      let length = text.length;
+      console.log("Length:", length);
+
+      // Extracting String Characters
+      let charAtFirst = text.charAt(0);
+      console.log("Character at index 0:", charAtFirst);
+
+      let charCodeAtFirst = text.charCodeAt(0);
+      console.log("Unicode value of character at index 0:", charCodeAtFirst);
+
+      let atIndex = text.at(2);
+      console.log("Character at index 2 using at():", atIndex);
+
+      let firstChar = text[0];
+      console.log("Character at index 0 using property access:", firstChar);
+
+      // Extracting String Parts
+      let slicedPart = text.slice(0, 10);
+      console.log("Slice from index 0 to 9:", slicedPart);
+
+      let subStringPart = text.substring(0, 10);
+      console.log("Substring from index 0 to 9:", subStringPart);
+
+      let subStrPart = text.substr(0, 10);
+      console.log("Substr from index 0, length 10:", subStrPart);
+
+      // Converting to Upper and Lower Case
+      let upperCaseText = text.toUpperCase();
+      console.log("Uppercase:", upperCaseText);
+
+      let lowerCaseText = text.toLowerCase();
+      console.log("Lowercase:", lowerCaseText);
+
+      // String Concatenation
+      let concatText = text.concat(" - Concatenated!");
+      console.log("Concatenated string:", concatText);
+
+      // Trimming Whitespace
+      let trimmedText = text.trim();
+      console.log("Trimmed:", trimmedText);
+
+      let trimmedStartText = text.trimStart();
+      console.log("Trimmed start:", trimmedStartText);
+
+      let trimmedEndText = text.trimEnd();
+      console.log("Trimmed end:", trimmedEndText);
+
+      // String Padding
+      let paddedStart = text.padStart(30, "*");
+      console.log("Padded start:", paddedStart);
+
+      let paddedEnd = text.padEnd(30, "*");
+      console.log("Padded end:", paddedEnd);
+
+      // String Repetition
+      let repeatedText = text.repeat(3);
+      console.log("Repeated 3 times:", repeatedText);
+
+      // Replacing String Content
+      let replacedText = text.replace("Methods", "Functions");
+      console.log("Replaced 'Methods' with 'Functions':", replacedText);
+
+      // Converting a String to an Array
+      let splitText = text.split(" ");
+      console.log("Split into array by space:", splitText);
+    </script> -->
+
+    <!-- <script>
+      let text = "Please locate where 'locate' occurs!";
+
+      // String indexOf()
+      let indexOfLocate = text.indexOf("locate");
+      console.log("indexOf('locate'):", indexOfLocate);
+
+      // String lastIndexOf()
+      let lastIndexOfLocate = text.lastIndexOf("locate");
+      console.log("lastIndexOf('locate'):", lastIndexOfLocate);
+
+      // String search()
+      let searchResult = text.search("locate");
+      console.log("search('locate'):", searchResult);
+
+      // String match()
+      let matchResult1 = text.match("locate");
+      console.log("match('locate'):", matchResult1);
+
+      let matchResult2 = text.match(/locate/);
+      console.log("match(/locate/):", matchResult2);
+
+      let globalMatchResult = text.match(/locate/g);
+      console.log("match(/locate/g):", globalMatchResult);
+
+      let globalCaseInsensitiveMatchResult = text.match(/locate/gi);
+      console.log("match(/locate/gi):", globalCaseInsensitiveMatchResult);
+
+      // String matchAll()
+      const matchAllIterator = text.matchAll(/locate/g);
+      console.log("matchAll(/locate/g):");
+      for (const match of matchAllIterator) {
+        console.log(match);
+      }
+
+      // String includes()
+      let includesResult1 = text.includes("locate");
+      console.log("includes('locate'):", includesResult1);
+
+      let includesResult2 = text.includes("locate", 20);
+      console.log("includes('locate', 20):", includesResult2);
+
+      // String startsWith()
+      let startsWithResult1 = text.startsWith("Please");
+      console.log("startsWith('Please'):", startsWithResult1);
+
+      let startsWithResult2 = text.startsWith("locate", 7);
+      console.log("startsWith('locate', 7):", startsWithResult2);
+
+      // String endsWith()
+      let endsWithResult1 = text.endsWith("occurs!");
+      console.log("endsWith('occurs!'):", endsWithResult1);
+
+      let endsWithResult2 = text.endsWith("where", 17);
+      console.log("endsWith('where', 17):", endsWithResult2);
+    </script> -->
+
+    <!-- <script>
+      let name = "John";
+      let age = 30;
+
+      // Using template strings for dynamic message creation
+      let message = `Hello, ${name}! You are ${age} years old.`;
+
+      console.log(message); // Output: Hello, John! You are 30 years old.
+    </script> -->
+
+    <!-- <script>
+      let x = 123; // A number without decimals
+      let y = 3.14; // A number with decimals
+
+      let a = 123e5; // 12300000
+      let b = 123e-5; // 0.00123
+
+      let integer = 999999999999999; // integer up to 15 digits
+      let largeInteger = 9999999999999999; // large integer beyond precision
+
+      let sum = 0.2 + 0.1; // Floating-point arithmetic may not be precise
+      let preciseSum = (0.2 * 10 + 0.1 * 10) / 10; // Precise arithmetic
+
+      let num1 = 10;
+      let num2 = "20";
+      let result = num1 + num2; // Result is "1020", not 30
+
+      let notANumber = 100 / "Apple"; // Result is NaN
+
+      let divisionByZero = 2 / 0; // Result is Infinity
+
+      let hexadecimal = 0xff; // Hexadecimal notation
+
+      let octal = 071; // Octal interpretation (avoid leading zeros)
+
+      let binary = 1101; // Binary representation
+
+      let stringValue = "100";
+      let numericValue = +stringValue; // Conversion to number using unary plus operator
+
+      let nanCheck = isNaN(100 / "Apple"); // Checking for NaN using isNaN()
+
+      let infinityCheck = typeof Infinity; // Result is "number"
+    </script> -->
+
+    <!-- <script>
+      let bigInt1 = 9999999999999999n;
+      let bigInt2 = BigInt(1234567890123456789012345);
+
+      let result = bigInt1 * bigInt2;
+
+      let hex = 0x20000000000003n;
+      let oct = 0o400000000000000003n;
+      let bin = 0b100000000000000000000000000000000000000000000000000011n;
+
+      let maxSafe = Number.MAX_SAFE_INTEGER;
+      let minSafe = Number.MIN_SAFE_INTEGER;
+
+      let isIntegerCheck = Number.isInteger(10);
+      let isSafeIntegerCheck = Number.isSafeInteger(12345678901234567890);
+    </script> -->
+
+    <!-- <script>
+      let x = 123;
+
+      // Converting number to string
+      let str = x.toString();
+
+      // Representing number in exponential notation
+      let exp = x.toExponential(2);
+
+      // Formatting number with fixed decimal places
+      let fixed = x.toFixed(2);
+
+      // Representing number to a specified precision
+      let precision = x.toPrecision(3);
+
+      // Getting the primitive value of a number
+      let value = x.valueOf();
+
+      let num1 = Number("10");
+      let num2 = parseFloat("10.33");
+      let num3 = parseInt("10");
+
+      // Parsing a date to number
+      let dateToNumber = Number(new Date("1970-01-01"));
+    </script> -->
+    <!-- <h1>Array Manipulation Example</h1>
+
+    <p>Original Array: <span id="originalArray"></span></p>
+    <p>Accessed Element: <span id="accessedElement"></span></p>
+    <p>Modified Array: <span id="modifiedArray"></span></p>
+
+    <script>
+      // Creating an array
+      const cars = ["Saab", "Volvo", "BMW"];
+
+      // Accessing an array element
+      let accessedCar = cars[1]; // Retrieves "Volvo"
+
+      // Modifying an array element
+      cars[0] = "Opel"; // Changes "Saab" to "Opel"
+
+      // Displaying the array manipulation in the webpage
+      document.getElementById("originalArray").textContent = cars.join(", ");
+      document.getElementById("accessedElement").textContent = accessedCar;
+      document.getElementById("modifiedArray").textContent = cars.join(", ");
+    </script> -->
+
+    <!-- <h1>Array Operations</h1>
+    <div id="output"></div>
+
+    <script>
+      // JavaScript code for array operations
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      let output = "";
+
+      output += "Array Length: " + fruits.length + "<br>";
+      output += "Array as String: " + fruits.toString() + "<br>";
+      output += "Third Element: " + fruits.at(2) + "<br>";
+      output += "Joined with '*': " + fruits.join(" * ") + "<br>";
+
+      output += "Popped Element: " + fruits.pop() + "<br>";
+      output += "Array after Pop: " + fruits.toString() + "<br>";
+
+      output += "New Length after Push: " + fruits.push("Kiwi") + "<br>";
+      output += "Array after Push: " + fruits.toString() + "<br>";
+
+      output += "Shifted Element: " + fruits.shift() + "<br>";
+      output += "Array after Shift: " + fruits.toString() + "<br>";
+
+      output += "New Length after Unshift: " + fruits.unshift("Lemon") + "<br>";
+      output += "Array after Unshift: " + fruits.toString() + "<br>";
+
+      // Display the output on the webpage
+      document.getElementById("output").innerHTML = output;
+    </script> -->
+
+    <!-- <script>
+      // Sorting an array alphabetically
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.sort();
+
+      // Reversing the order of elements in the array
+      const reversedFruits = fruits.reverse();
+
+      // Sorting an array numerically
+      const points = [40, 100, 1, 5, 25, 10];
+      points.sort(function (a, b) {
+        return a - b;
+      });
+
+      // Using Fisher Yates shuffle to sort array in random order
+      const shuffledPoints = [...points]; // Create a copy of points array
+      for (let i = shuffledPoints.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [shuffledPoints[i], shuffledPoints[j]] = [
+          shuffledPoints[j],
+          shuffledPoints[i],
+        ];
+      }
+
+      // Finding the lowest and highest values in the array
+      const minPoint = Math.min(...points);
+      const maxPoint = Math.max(...points);
+
+      // Custom function to find the lowest value in an array
+      function myArrayMin(arr) {
+        let min = Infinity;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] < min) {
+            min = arr[i];
+          }
+        }
+        return min;
+      }
+
+      // Custom function to find the highest value in an array
+      function myArrayMax(arr) {
+        let max = -Infinity;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > max) {
+            max = arr[i];
+          }
+        }
+        return max;
+      }
+
+      // Output
+      console.log("Sorted Fruits:", fruits);
+      console.log("Reversed Fruits:", reversedFruits);
+      console.log("Sorted Points:", points);
+      console.log("Shuffled Points:", shuffledPoints);
+      console.log("Minimum Point:", minPoint);
+      console.log("Maximum Point:", maxPoint);
+      console.log("Minimum Point (Custom):", myArrayMin(points));
+      console.log("Maximum Point (Custom):", myArrayMax(points));
+    </script> -->
+
+    <!-- <script>
+      // Example array
+      const numbers = [45, 4, 9, 16, 25];
+
+      // forEach() method
+      let txt = "";
+      numbers.forEach(myFunction);
+
+      function myFunction(value) {
+        txt += value + "<br>";
+      }
+
+      // map() method
+      const numbers2 = numbers.map(myFunction2);
+
+      function myFunction2(value) {
+        return value * 2;
+      }
+
+      // flatMap() method
+      const myArr = [1, 2, 3, 4, 5, 6];
+      const newArr = myArr.flatMap((x) => x * 2);
+
+      // filter() method
+      const over18 = numbers.filter(myFunction3);
+
+      function myFunction3(value) {
+        return value > 18;
+      }
+
+      // reduce() method
+      const sum = numbers.reduce(myFunction4);
+
+      function myFunction4(total, value) {
+        return total + value;
+      }
+
+      // reduceRight() method
+      const sumRight = numbers.reduceRight(myFunction5);
+
+      function myFunction5(total, value) {
+        return total + value;
+      }
+
+      // every() method
+      const allOver18 = numbers.every(myFunction6);
+
+      function myFunction6(value) {
+        return value > 18;
+      }
+
+      // some() method
+      const someOver18 = numbers.some(myFunction7);
+
+      function myFunction7(value) {
+        return value > 18;
+      }
+
+      // Array.from() method
+      const arrayFromString = Array.from("ABCDEFG");
+
+      // keys() method
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      const keys = fruits.keys();
+
+      // entries() method
+      const f = fruits.entries();
+
+      // Array with() method (hypothetical)
+      const months = ["Januar", "Februar", "Mar", "April"];
+      const myMonths = months.with(2, "March");
+
+      // Spread operator
+      const q1 = ["Jan", "Feb", "Mar"];
+      const q2 = ["Apr", "May", "Jun"];
+      const q3 = ["Jul", "Aug", "Sep"];
+      const q4 = ["Oct", "Nov", "May"];
+      const year = [...q1, ...q2, ...q3, ...q4];
+    </script> -->
+    <!-- 
+    <script>
+      // Example array declared with const
+      const cars = ["Saab", "Volvo", "BMW"];
+
+      // Attempting to reassign the array will result in an error
+      // cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+
+      // Changing elements of a constant array is allowed
+      cars[0] = "Toyota";
+      cars.push("Audi");
+
+      // Example array declared with var (not constant)
+      var cars2 = ["Saab", "Volvo", "BMW"];
+      cars2 = ["Toyota", "Volvo", "Audi"]; // Allowed
+
+      // Example of const with block scope
+      {
+        const cars = ["Toyota", "Volvo", "BMW"]; // Block-scoped const
+      }
+
+      // Example of var without block scope
+      {
+        var cars = ["Toyota", "Volvo", "BMW"]; // Not block-scoped
+      }
+
+      // Redeclaring arrays with var is allowed
+      var cars3 = ["Volvo", "BMW"]; // Allowed
+      var cars3 = ["Toyota", "BMW"]; // Allowed
+      cars3 = ["Volvo", "Saab"]; // Allowed
+
+      // Redeclaring or reassigning arrays with const is not allowed in the same scope or block
+      // const cars4 = ["Volvo", "BMW"];   // Allowed
+      // const cars4 = ["Volvo", "BMW"];   // Not allowed
+      // cars4 = ["Volvo", "BMW"];         // Not allowed
+      // {
+      //   const cars4 = ["Volvo", "BMW"]; // Allowed
+      //   const cars4 = ["Volvo", "BMW"]; // Not allowed
+      //   var cars4 = ["Volvo", "BMW"];   // Not allowed
+      //   cars4 = ["Volvo", "BMW"];       // Not allowed
+      // }
+
+      // Redeclaring an array with const in another scope or block is allowed
+      const cars5 = ["Volvo", "BMW"]; // Allowed
+      {
+        const cars5 = ["Volvo", "BMW"]; // Allowed
+      }
+    </script> -->
+
+    <!-- <div id="output"></div>
+
+    <script>
+      // Creating a new Date object with the current date and time
+      const currentDate = new Date();
+
+      // Creating a new Date object from a date string
+      const specificDate = new Date("2022-03-25");
+
+      // Creating a new Date object with specified date and time components
+      const customDate = new Date(2018, 11, 24, 10, 33, 30);
+
+      // Creating a new Date object with milliseconds since January 01, 1970
+      const dateFromMilliseconds = new Date(100000000000);
+
+      // Displaying dates in different formats
+      document.getElementById("output").innerHTML = `
+            <p>Current Date: ${currentDate.toString()}</p>
+            <p>Specific Date: ${specificDate.toDateString()}</p>
+            <p>Custom Date: ${customDate.toUTCString()}</p>
+            <p>Date from Milliseconds: ${dateFromMilliseconds.toISOString()}</p>
+        `;
+    </script> -->
+    <!-- <div id="output"></div>
+
+    <script>
+        // Creating a new Date object
+        let date = new Date();
+
+        // Get methods
+        let year = date.getFullYear();
+        let month = date.getMonth(); // Months are 0-based, so January is 0
+        let day = date.getDate();
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let milliseconds = date.getMilliseconds();
+        let dayOfWeek = date.getDay(); // 0 for Sunday, 1 for Monday, etc.
+
+        // Display current date
+        document.getElementById('output').innerHTML = `
+            <p>Current Date: ${date}</p>
+            <p>Year: ${year}</p>
+            <p>Month: ${month}</p>
+            <p>Day: ${day}</p>
+            <p>Hours: ${hours}</p>
+            <p>Minutes: ${minutes}</p>
+            <p>Seconds: ${seconds}</p>
+            <p>Milliseconds: ${milliseconds}</p>
+            <p>Day of Week: ${dayOfWeek}</p>
+        `;
+
+        // Set methods
+        date.setFullYear(2023);
+        date.setMonth(11); // December
+        date.setDate(31);
+        date.setHours(23);
+        date.setMinutes(59);
+        date.setSeconds(59);
+        date.setMilliseconds(999);
+
+        // Display updated date
+        document.getElementById('output').innerHTML += `
+            <p>Updated Date: ${date}</p>
+        `;
+    </script> -->
+
+    <!-- <script>
+      // Constants
+      let pi = Math.PI; // Get the value of pi
+      let e = Math.E; // Get Euler's number
+
+      // Methods
+      let randomNumber = Math.random(); // Generate a random number between 0 and 1
+      let roundedNumber = Math.round(4.6); // Round a number to its nearest integer
+      let squaredNumber = Math.pow(8, 2); // Get the value of 8 raised to the power of 2
+      let squareRoot = Math.sqrt(64); // Get the square root of 64
+      let absoluteValue = Math.abs(-4.7); // Get the absolute value of -4.7
+      let sineValue = Math.sin((90 * Math.PI) / 180); // Get the sine of 90 degrees
+      let cosineValue = Math.cos((0 * Math.PI) / 180); // Get the cosine of 0 degrees
+      let minimumValue = Math.min(0, 150, 30, 20, -8, -200); // Get the minimum value from a list
+      let maximumValue = Math.max(0, 150, 30, 20, -8, -200); // Get the maximum value from a list
+    </script> -->
+
+    <!-- <script>
+      // Using Boolean function
+      let result1 = Boolean(10 > 9); // Evaluates to true
+      let result2 = 10 > 9; // Also evaluates to true
+
+      // Comparisons and conditions
+      let day = "Monday";
+      if (day == "Monday") {
+        console.log("Today is Monday");
+      }
+
+      let salary = 9500;
+      if (salary > 9000) {
+        console.log("Salary is greater than 9000");
+      }
+
+      let age = 20;
+      if (age < 18) {
+        console.log("You are under 18 years old");
+      }
+
+      // Truthy values
+      let truthyValues = [100, 3.14, -15, "Hello", "false", 7 + 1 + 3.14];
+      truthyValues.forEach((value) => {
+        console.log(value); // All values will print as truthy
+      });
+
+      // Falsy values
+      let falsyValues = [0, -0, "", undefined, null, false, NaN];
+      falsyValues.forEach((value) => {
+        console.log(value); // All values will print as falsy
+      });
+
+      // Creating Boolean objects (not recommended)
+      let x = new Boolean(false);
+      let y = new Boolean(false);
+
+      console.log(typeof x); // Prints "object"
+      console.log(typeof y); // Prints "object"
+
+      // Comparing Boolean objects
+      console.log(x == y); // Prints "true"
+      console.log(x === y); // Prints "false"
+    </script> -->
+
+    <!-- <script>
+      // Comparison Operators
+      let x = 5;
+      console.log(x == 8); // false
+      console.log(x == 5); // true
+      console.log(x == "5"); // true
+      console.log(x === 5); // true
+      console.log(x === "5"); // false
+      console.log(x != 8); // true
+      console.log(x !== 5); // false
+      console.log(x !== "5"); // true
+      console.log(x !== 8); // true
+      console.log(x > 8); // false
+      console.log(x < 8); // true
+      console.log(x >= 8); // false
+      console.log(x <= 8); // true
+
+      // Logical Operators
+      let y = 6,
+        z = 3;
+      console.log(x < 10 && y > 1); // true
+      console.log(x == 5 || y == 5); // false
+      console.log(!(x == y)); // true
+
+      // Conditional (Ternary) Operator
+      let voteable = x < 18 ? "Too young" : "Old enough";
+
+      // Nullish Coalescing Operator
+      let name = null;
+      let text = "missing";
+      let result = name ?? text;
+
+      // Optional Chaining Operator
+      const car = { type: "Fiat", model: "500", color: "white" };
+      document.getElementById("demo").innerHTML = car?.name;
+    </script> -->
+    <!-- <script>
+      let hour = new Date().getHours(); // Get the current hour
+
+      let greeting; // Declare a variable to store the greeting
+
+      // Use if, else if, and else statements to determine the greeting based on the current hour
+      if (hour < 10) {
+        greeting = "Good morning";
+      } else if (hour < 20) {
+        greeting = "Good day";
+      } else {
+        greeting = "Good evening";
+      }
+
+      console.log(greeting); // Output the determined greeting
+    </script>
+    <script>
+      // Use the switch statement to determine the weekday based on the current day number
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+      }
+
+      console.log(day); // Output the determined weekday
+    </script> -->
+
+    <!-- <script>
+      // for loop
+      console.log("For loop:");
+      for (let i = 0; i < 5; i++) {
+        console.log(i);
+      }
+
+      // while loop
+      console.log("\nWhile loop:");
+      let j = 0;
+      while (j < 5) {
+        console.log(j);
+        j++;
+      }
+
+      // do...while loop
+      console.log("\nDo...while loop:");
+      let k = 0;
+      do {
+        console.log(k);
+        k++;
+      } while (k < 5);
+
+      // for...in loop
+      console.log("\nFor...in loop:");
+      const person = { name: "John", age: 30 };
+      for (let key in person) {
+        console.log(key + ": " + person[key]);
+      }
+
+      // for...of loop
+      console.log("\nFor...of loop:");
+      const arr = ["a", "b", "c"];
+      for (let element of arr) {
+        console.log(element);
+      }
+    </script> -->
+    <!-- <script>
+      // Using break statement
+      console.log("Using break statement:");
+      for (let i = 0; i < 10; i++) {
+        if (i === 3) {
+          break;
+        }
+        console.log("The number is " + i);
+      }
+
+      // Using continue statement
+      console.log("\nUsing continue statement:");
+      for (let i = 0; i < 10; i++) {
+        if (i === 3) {
+          continue;
+        }
+        console.log("The number is " + i);
+      }
+
+      // Using labeled statements with break
+      console.log("\nUsing labeled statement with break:");
+      const cars = ["BMW", "Volvo", "Saab", "Ford"];
+      list: {
+        console.log(cars[0]);
+        console.log(cars[1]);
+        break list;
+        console.log(cars[2]); // This line will not be executed
+        console.log(cars[3]); // This line will not be executed
+      }
+    </script> -->
+
+    <!-- <script>
+      // Creating a Set
+      const mySet = new Set();
+
+      // Adding elements to the Set
+      mySet.add(1);
+      mySet.add(2);
+      mySet.add(3);
+
+      // Checking existence of an element
+      console.log(mySet.has(2)); // Output: true
+
+      // Deleting an element
+      mySet.delete(2);
+
+      // Clearing all elements from the Set
+      mySet.clear();
+
+      // Iterating through the Set
+      mySet.add(4);
+      mySet.add(5);
+      for (const item of mySet) {
+        console.log(item);
+      }
+
+      // Set size
+      console.log(mySet.size); // Output: 2 (after deleting one element)
+
+      // Automatic removal of duplicates
+      mySet.add(4);
+      mySet.add(4); // Won't be added again
+
+      // Set operations
+      const setA = new Set([1, 2, 3]);
+      const setB = new Set([3, 4, 5]);
+      const unionSet = new Set([...setA, ...setB]); // Union
+      const intersectionSet = new Set([...setA].filter((x) => setB.has(x))); // Intersection
+      const differenceSet = new Set([...setA].filter((x) => !setB.has(x))); // Difference
+    </script> -->
+    <!-- <script>
+      // Creating a Map using array initialization
+      const fruits1 = new Map([
+        ["apples", 500],
+        ["bananas", 300],
+        ["oranges", 200],
+      ]);
+
+      // Creating a Map and setting values individually
+      const fruits2 = new Map();
+      fruits2.set("apples", 500);
+      fruits2.set("bananas", 300);
+      fruits2.set("oranges", 200);
+
+      // Changing an existing Map value using set()
+      fruits2.set("apples", 200);
+
+      // Getting a value from a Map using get()
+      fruits2.get("apples"); // Returns 500
+
+      // Deleting an element from a Map using delete()
+      fruits2.delete("apples");
+
+      // Checking if a key exists in a Map using has()
+      fruits2.has("apples");
+
+      // Iterating over all entries in a Map using forEach()
+      let text11 = "";
+      fruits.forEach((value, key) => {
+        text11 += key + " = " + value;
+      });
+
+      // Iterating over entries in a Map using entries() method
+      let text22 = "";
+      for (const [key, value] of fruits.entries()) {
+        text22 += key + " = " + value;
+      }
+
+      // Getting the number of elements in a Map using size property
+      fruits.size;
+    </script> -->
+    <!-- 
+    <script>
+      // Using typeof to determine data types
+      typeof "John"; // Returns "string"
+      typeof 3.14; // Returns "number"
+      typeof NaN; // Returns "number"
+      typeof false; // Returns "boolean"
+      typeof [1, 2, 3, 4]; // Returns "object"
+      typeof { name: "John", age: 34 }; // Returns "object"
+      typeof new Date(); // Returns "object"
+      typeof function () {}; // Returns "function"
+      typeof myCar; // Returns "undefined"
+      typeof null; // Returns "object"
+
+      // Checking if an object is an Array
+      function isArray(myArray) {
+        return myArray.constructor === Array;
+      }
+
+      // Checking if an object is a Date
+      function isDate(myDate) {
+        return myDate.constructor === Date;
+      }
+    </script> -->
+
+    <!-- <script>
+      // Converting Strings to Numbers
+      Number("3.14"); // Returns 3.14
+      Number(" "); // Returns 0
+      Number(""); // Returns 0
+
+      // Converting Numbers to Strings
+      String(123); // Returns "123"
+      String(100 + 23); // Returns "123"
+
+      // Converting Dates to Numbers
+      let d = new Date();
+      Number(d); // Returns milliseconds since Jan 1, 1970
+      d.getTime(); // Returns milliseconds since Jan 1, 1970
+
+      // Converting Dates to Strings
+      String(Date()); // Returns current date and time as a string
+      Date().toString(); // Returns current date and time as a string
+
+      // Converting Booleans to Numbers
+      Number(false); // Returns 0
+      Number(true); // Returns 1
+
+      // Converting Booleans to Strings
+      String(false); // Returns "false"
+      String(true); // Returns "true"
+    </script> -->
+
+    <!-- <script>
+      // Using String search() With a String
+      let text = "Visit W3Schools!";
+      let n = text.search("W3Schools"); // Returns 6
+
+      // Using String search() With a Regular Expression
+      let text1 = "Visit W3Schools";
+      let n1 = text1.search(/w3schools/i); // Returns 6
+
+      // Using String replace() With a Regular Expression
+      let text2 = "Visit Microsoft!";
+      let result = text2.replace(/microsoft/i, "W3Schools"); // Returns "Visit W3Schools!"
+    </script> -->
+    <!-- <script>
+      // Example 1
+      x = 5; // Assign 5 to x
+      elem = document.getElementById("demo"); // Find an element
+      elem.innerHTML = x; // Display x in the element
+      var x; // Declare x
+
+      // Example 2
+      var x; // Declare x
+      x = 5; // Assign 5 to x
+      elem = document.getElementById("demo"); // Find an element
+      elem.innerHTML = x; // Display x in the element
+
+      // This will result in a ReferenceError
+      // carName = "Volvo";
+      // let carName;
+
+      // This code will not run.
+      // carName = "Volvo";
+      // const carName;
+
+      // Example 1
+      var x = 5; // Initialize x
+      var y = 7; // Initialize y
+      elem = document.getElementById("demo"); // Find an element
+      elem.innerHTML = x + " " + y; // Display x and y
+
+      // Example 2
+      var x = 5; // Initialize x
+      elem = document.getElementById("demo"); // Find an element
+      elem.innerHTML = x + " " + y; // Display x and y
+      var y = 7; // Initialize y
+    </script> -->
+    <!-- <script>
+      function myFunction() {
+        console.log(this);
+      }
+
+      myFunction(); // Output: Window object in non-strict mode, undefined in strict mode
+
+      const obj = {
+        name: "Object",
+        method() {
+          console.log(this);
+        },
+      };
+
+      obj.method(); // Output: Object { name: "Object" }
+
+      function Person(name) {
+        this.name = name;
+        console.log(this);
+      }
+
+      const person = new Person("John"); // Output: Person { name: "John" }
+    </script> -->
+    <script>
+      // JSON string
+      var jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+
+      // Parsing JSON string into a JavaScript object
+      var jsonObject = JSON.parse(jsonString);
+      console.log(jsonObject.name); // Output: John
+      console.log(jsonObject.age); // Output: 30
+      console.log(jsonObject.city); // Output: New York
+
+      // JavaScript object
+      var jsonObject2 = {
+        name: "Alice",
+        age: 25,
+        city: "Los Angeles",
+      };
+
+      // Stringifying JavaScript object into a JSON string
+      var jsonString2 = JSON.stringify(jsonObject2);
+      console.log(jsonString2); // Output: {"name":"Alice","age":25,"city":"Los Angeles"}
+    </script>
+  </body>
+</html>
